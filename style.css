@@ -26,10 +26,11 @@ main {
     justify-content: space-between;
     align-items: center;
     max-width: 66%;
-    width: auto;
+    min-width: 425px;
     height: 30%;
     border-radius: 1rem;
     background-color: hsl(217, 19%, 24%);
+    box-shadow: 1rem 1rem 2rem hsla(220, 21%, 11%, 0.752);
 }
 
 p {
@@ -67,6 +68,8 @@ h1 {
     border-radius: 50%;
     background: hsl(150, 100%, 66%);
     margin-bottom: -2rem;
+    box-shadow: 1rem 1rem 2rem hsla(220, 21%, 11%, 0.752);
+
 
 }
 
@@ -74,6 +77,13 @@ h1 {
     box-shadow: 0 0 2rem hsl(150, 100%, 66%);
 }
 
+@media only screen and (max-width: 425px) {
+    #pageDivider {
+        background-image: url('./images/pattern-divider-mobile.svg');
+    }
 
-
+    main {
+        min-width: 95%;
+    }
+}
 
